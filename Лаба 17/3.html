@@ -1,0 +1,19 @@
+
+<html>
+<head>
+  <title>DOM</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p id="myParagraph">Пhgfggbuhа</p>
+  </div>
+
+  <script>
+    let elementById = document.getElementById('myParagraph'); 
+    let elementByHierarchy = document.getElementById('myDiv').getElementsByTagName('p')[0]; 
+    let elementByQuerySelector = document.querySelector('#myDiv p'); 
+    console.log(elementById === elementByHierarchy);
+    console.log(elementById === elementByQuerySelector); 
+  </script>
+</body>
+</html>

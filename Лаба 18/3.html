@@ -1,0 +1,48 @@
+
+<html lang>
+<head>
+  <title>dggxb</title>
+</head>
+<body>
+  <div id="Div">Первый элементдив</div>
+  <button id="Button">Нажми меня (´｡• ω •｡`)</button>
+  <p id="Paragraph">текст текст текст</p>
+  <span id="Span">спан</span>
+  <br>
+  <a id="Link" href="#">Ссылка</a>
+
+  <script>
+    document.getElementById('Div').addEventListener('click', function() {
+      console.log('Обработчик всплытия - первый элемент');
+    });
+    document.getElementById('Div').addEventListener('click', function() {
+      console.log('Обработчик перехвата - первый элемент');
+    }, true);
+    document.getElementById('Button').addEventListener('mouseover', function() {
+      console.log('Обработчик всплытия - кнопка');
+    });
+    document.getElementById('Button').addEventListener('mouseover', function() {
+      console.log('Обработчик перехвата - кнопка');
+    }, true);
+    document.getElementById('Paragraph').addEventListener('click', function() {
+      console.log('Обработчик всплытия - абзац');
+    });
+    document.getElementById('Paragraph').addEventListener('click', function() {
+      console.log('Обработчик перехвата - абзац');
+    }, true);
+    document.getElementById('Span').addEventListener('click', function() {
+      console.log('Обработчик всплытия - спан');
+    });
+    document.getElementById('Span').addEventListener('click', function() {
+      console.log('Обработчик перехвата - спан');
+    }, true);
+    document.getElementById('Link').addEventListener('click', function(event) {
+      console.log('Обработчик всплытия - ссылка');
+      event.preventDefault();
+    });
+    document.getElementById('Link').addEventListener('click', function(event) {
+      console.log('Обработчик перехвата - ссылка');
+    }, true);
+  </script>
+</body>
+</html>

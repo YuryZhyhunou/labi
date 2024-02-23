@@ -1,0 +1,69 @@
+<html>
+<head>
+  <title>Слайдер
+  </title>
+  <style>
+    #sliderContainer {
+      position: relative;
+      max-width: 500px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .sliderImage {
+      display: none;
+      width: 100%;
+      height: auto;
+    }
+
+    #caption {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Сменяемость власти</h1>
+
+  <div id="sliderContainer">
+    <img class="sliderImage" src="1.jpg" alt="Изображение 1">
+    <img class="sliderImage" src="2.jpg" alt="Изображение 2">
+    <img class="sliderImage" src="3.jpg" alt="Изображение 3">
+    <img class="sliderImage" src="4.jpg" alt="Изображение 4">
+    <img class="sliderImage" src="5.jpg" alt="Изображение 5">
+
+    <p id="caption">Название изображения</p>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    let sliderImages = document.getElementsByClassName('sliderImage');
+    let caption = document.getElementById('caption');
+
+    function showSlide(n) {
+      if (n >= sliderImages.length) {
+        currentSlide = 0;
+      } else if (n < 0) {
+        currentSlide = sliderImages.length - 1;
+      } else {
+        currentSlide = n;
+      }
+
+      for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = 'none';
+      }
+      sliderImages[currentSlide].style.display = 'block';
+      caption.textContent = sliderImages[currentSlide].alt;
+    }
+
+
+
+
+    
+    showSlide(currentSlide);
+    setInterval(function() {
+      showSlide(currentSlide + 1);
+    }, 1500);
+  </script>
+</body>
+</html>

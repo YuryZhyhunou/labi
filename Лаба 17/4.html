@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>пятьпикч</title>
+  <style>
+    figure {
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+    }
+    img {
+      height: 200px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Сменяемость власти</h1>
+  <figure>
+    <img id="mainImage" src="1.jpg" alt="Изображение 1" onclick="chang()">
+    <figcaption id="imageCaption">Изображение 1</figcaption>
+  </figure>
+
+  <script>
+    let images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg'];
+    let captions = ['Изображение 1', 'Изображение 2', 'Изображение 3', 'Изображение 4', 'Изображение 5'];
+    let currentImage = 0;
+
+    function chang() {
+      let image = document.getElementById('mainImage');
+      let caption = document.getElementById('imageCaption');
+      currentImage = (currentImage + 1) % images.length;
+      image.src = '' + images[currentImage];
+      caption.textContent = captions[currentImage];
+    }
+  </script>
+</body>
+</html>

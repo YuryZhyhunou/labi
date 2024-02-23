@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>списбки</title>
+</head>
+<body>
+  <h1>Создание и управление списком</h1>
+
+  <button onclick="createList('ordered')">Создать упорядоченный список</button>
+  <button onclick="createList('unordered')">Создать неупорядоченный список</button>
+  <div id="listContainer"></div>
+
+  <button onclick="addListItem('begin')">Добавить элемент в начало списка</button>
+  <button onclick="addListItem('end')">Добавить элемент в конец списка</button>
+  <button onclick="changeColor()">Изменить цвет четных элементов списка</button>
+
+  <script>
+    function createList(type) {
+      let listType = (type === 'ordered') ? 'ol' : 'ul';
+      let listContainer = document.getElementById('listContainer');
+   listContainer.innerHTML = '<' + listType + ' id="myList"></' + listType + '>';
+    }
+    function addListItem(position) {
+      let list = document.getElementById('myList');
+      let newItem = document.createElement('li');
+  newItem.textContent = 'Новый элемент';
+      if (position === 'begin') {
+     list.prepend(newItem);
+      } else {
+        list.appendChild(newItem);
+      }
+    }
+    function changeColor() {
+      let listItems = document.getElementById('myList').getElementsByTagName('li');
+      for (let i = 0; i < listItems.length; i++) {
+      if (i % 2 !== 0) {
+       listItems[i].style.color = 'blue';
+        }
+      }
+    }
+  </script>
+</body>
+</html>

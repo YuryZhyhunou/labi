@@ -1,0 +1,45 @@
+
+<html>
+<head>
+  <title>Таблица с добавлением строк и плавной сменой фона</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+      padding: 10px;
+      transition: background-color 5s; /* Плавная смена фона */
+    }
+  </style>
+</head>
+<body>
+  <h1>Таблица с добавлением строк и плавной сменой фона</h1>
+
+  <table id="myTable">
+    <tr>
+      <td>cell 1</td>
+    </tr>
+    <tr>
+      <td>cell 2</td>
+    </tr>
+    <tr>
+      <td>cell 3</td>
+    </tr>
+  </table>
+
+  <script>
+    var table = document.getElementById('myTable');
+
+    table.addEventListener('click', function(event) {
+      let newRow = table.insertRow(event.target.parentNode.rowIndex + 1);
+      let newCell = newRow.insertCell(0);
+        newCell.textContent = 'New cell';
+    });
+    table.addEventListener('dblclick', function(event) {
+      if (event.target.style.backgroundColor === 'lightblue') {
+        event.target.style.backgroundColor = '';
+      } else {
+        event.target.style.backgroundColor = 'lightblue';
+      }
+    });
+  </script>
+</body>
+</html>
