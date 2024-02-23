@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>OnOff</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .toggle-button {
+            width: 100px;
+            height: 50px;
+            background-color: #ccc;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .on {
+            background-color: #2039b7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton" class="toggle-button">Off</button>
+    <script>
+        let isOn = false;
+        $(document).ready(function(){
+            $("#toggleButton").on("click", function(){
+                if (isOn) {
+                    $(this).removeClass("on").text("Off");
+                } else {
+                    $(this).addClass("on").text("On");
+                }
+                isOn = !isOn;
+            });
+        });
+    </script>
+</body>
+</html>

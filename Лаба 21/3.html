@@ -1,0 +1,26 @@
+<html>
+<head>
+  
+    <title>жонсон</title>
+</head>
+<body>
+    <script>
+        let listData = `{
+            "items": [
+                {"id": 1, "name": "Item 1"},
+                {"id": 2, "name": "Item 2"},
+                {"id": 3, "name": "Item 3"}
+            ]
+        }`;
+        let objectFromJSON = JSON.parse(listData);
+        let ul = document.createElement('ul');
+        let items = objectFromJSON.items;
+        items.forEach(item => {
+            let li = document.createElement('li');
+            li.textContent = `${item.id}: ${item.name}`;
+            ul.appendChild(li);
+        });
+       document.body.appendChild(ul);
+    </script>
+</body>
+</html>

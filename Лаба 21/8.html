@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>форма</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <div>
+            <label for="name">Ху:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="message">Отзыв:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+        <input type="button" id="submit" value="Submit">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $("#submit").on("click", function(){
+                let formValid = true;
+                $("#myForm input, #myForm textarea").each(function() {
+                    if ($(this).val() === '') {
+                        formValid = false;
+                        return false;
+                    }
+                });
+
+                if (!formValid) {
+                    alert("Заполните эти... да как их...");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

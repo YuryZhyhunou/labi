@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>табьоиа</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table, th, td, tr {
+            border: 2px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center;
+        }
+       
+        th:first-child, td:first-child, tr:first-child {
+            background-color: rgb(111, 230, 141);
+            color: white;
+        }
+        td:not(:first-child), tr:not(:first-child) {
+            background-color: rgb(187, 173, 238);
+            color: white;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        body {
+            font-family: 'Lobster', cursive;
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <table id="Table">
+            <tr>
+                <th></th>
+                <th>PRESENT</th>
+                <th>PAST</th>
+                <th>FUTURE</th>
+            </tr>
+    
+            <tr>
+                <td>+</td>
+                <td>I dance</td>
+                <td>I danced</td>
+                <td>I will dance</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>I dont dance</td>
+                <td>I didnt dance</td>
+                <td>I wont dance</td>
+            </tr>
+            <tr> 
+                <td>?</td>
+                <td>Do I dance?</td>
+                <td>Did I dance?</td>
+                <td>Will I dance?</td>
+            </tr>
+    
+    </table>
+      <script>
+        $(document).ready(function(){
+            $("th:contains('PRESENT')").hover(function(){
+                alert("Описание: настоящее время");
+            });
+            $("th:contains('PAST')").hover(function(){
+                alert("Описание: прошедшее время");
+            });
+            $("th:contains('FUTURE')").hover(function(){
+                alert("Описание: будущее время");
+            });
+        });
+    </script>
+</body>
+</html>
