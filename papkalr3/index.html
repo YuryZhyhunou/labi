@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Форма покупки билета на концерт</title>
+</head>
+<body  background="C:\Users\maxsi\Desktop\смехотехника\papkalr3\bg.jpg" text="white">
+  <h2>Купить билет на концерт Sewerstalb</h2>
+</p>
+  <form>
+
+
+    <label for="name">ФИО:   </label>
+    <input type="text" id="name" name="name" placeholder="Введите ваше ФИО" required>
+    
+    <br>
+    <br>
+
+    <label for="email">Электронная почта:</label>
+    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+    
+    <br>
+    <br>
+
+    <label for="quantity">Количество билетов:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="9999" required>
+    
+    <br>
+    <br>
+
+    <label for="payment">Способ оплаты:</label>
+    <select id="payment" name="payment" required>
+      <option value="">Выберите способ оплаты</option>
+      <option value="visa">Visa</option>
+      <option value="mastercard">Mastercard</option>
+    </select>
+    
+    
+    <br>
+    <br>
+
+    <label for="comments">Комментарии:</label>
+    <br>
+    <textarea id="comments" name="comments" rows="4" cols="36" placeholder="Оставить комментарий к заказу"></textarea>
+    
+    <br>
+    <br>
+
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">Я даю согласие на обработку моих персональных данных и на бесконечную рассылку спама на мою электронную почту</label>
+    
+    <br>
+    <br>
+
+    <input type="submit" value="Купить билет">
+
+
+
+  </form>
+
+</body>
+</html>

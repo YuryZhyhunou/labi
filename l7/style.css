@@ -1,0 +1,326 @@
+.element {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.element .div {
+  background-color: #ffffff;
+  width: 612px;
+  height: 792px;
+  position: relative;
+}
+
+.element .text-wrapper {
+  position: absolute;
+  top: 468px;
+  left: 262px;
+  font-family: var(--style-1-heading-1-font-family);
+  font-weight: var(--style-1-heading-1-font-weight);
+  color: var(--squirtle-blue);
+  font-size: var(--style-1-heading-1-font-size);
+  letter-spacing: var(--style-1-heading-1-letter-spacing);
+  line-height: var(--style-1-heading-1-line-height);
+  white-space: nowrap;
+  font-style: var(--style-1-heading-1-font-style);
+}
+
+.element .service-group {
+  position: absolute;
+  width: 313px;
+  height: 103px;
+  top: 498px;
+  left: 255px;
+}
+
+.element .date {
+  position: absolute;
+  top: 14px;
+  left: 7px;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: var(--dark-gray);
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  white-space: nowrap;
+  font-style: var(--style-1-body-text-font-style);
+}
+
+.element .text-wrapper-2 {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  font-family: "Fira Sans", Helvetica;
+  font-weight: 700;
+  color: var(--dark-gray);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+.element .bullet {
+  width: 311px;
+  height: 30px;
+  top: 35px;
+  position: absolute;
+  left: 0;
+}
+
+.element .p {
+  position: absolute;
+  width: 302px;
+  top: 0;
+  left: 7px;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: var(--light-gray);
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  font-style: var(--style-1-body-text-font-style);
+}
+
+.element .bullet-2 {
+  width: 3px;
+  height: 3px;
+  top: 6px;
+  background-color: var(--light-gray);
+  border-radius: 1.5px;
+  position: absolute;
+  left: 0;
+}
+
+.element .bullet-3 {
+  width: 311px;
+  height: 30px;
+  top: 73px;
+  position: absolute;
+  left: 0;
+}
+
+.element .education-group {
+  width: 308px;
+  height: 65px;
+  top: 662px;
+  position: absolute;
+  left: 262px;
+}
+
+.element .text-wrapper-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Fira Sans", Helvetica;
+  font-weight: 700;
+  color: var(--dark-gray);
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 12px;
+  white-space: nowrap;
+}
+
+.element .text-wrapper-4 {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: var(--dark-gray);
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  white-space: nowrap;
+  font-style: var(--style-1-body-text-font-style);
+}
+
+.element .text-wrapper-5 {
+  position: absolute;
+  width: 302px;
+  top: 35px;
+  left: 0;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: var(--light-gray);
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  font-style: var(--style-1-body-text-font-style);
+}
+
+.element .text-wrapper-6 {
+  top: 632px;
+  font-family: var(--style-1-heading-1-font-family);
+  font-weight: var(--style-1-heading-1-font-weight);
+  color: var(--squirtle-blue);
+  font-size: var(--style-1-heading-1-font-size);
+  letter-spacing: var(--style-1-heading-1-letter-spacing);
+  line-height: var(--style-1-heading-1-line-height);
+  white-space: nowrap;
+  position: absolute;
+  left: 262px;
+  font-style: var(--style-1-heading-1-font-style);
+}
+
+.element .experience-group {
+  position: absolute;
+  width: 313px;
+  height: 118px;
+  top: 319px;
+  left: 255px;
+}
+
+.element .bullet-4 {
+  width: 311px;
+  height: 45px;
+  top: 73px;
+  position: absolute;
+  left: 0;
+}
+
+.element .experience-group-2 {
+  position: absolute;
+  width: 313px;
+  height: 201px;
+  top: 94px;
+  left: 255px;
+}
+
+.element .bullet-5 {
+  width: 311px;
+  height: 45px;
+  top: 156px;
+  position: absolute;
+  left: 0;
+}
+
+.element .bullet-6 {
+  width: 311px;
+  height: 60px;
+  top: 88px;
+  position: absolute;
+  left: 0;
+}
+
+.element .bullet-7 {
+  width: 311px;
+  height: 45px;
+  top: 35px;
+  position: absolute;
+  left: 0;
+}
+
+.element .experience-label {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  font-family: var(--style-1-heading-2-font-family);
+  font-weight: var(--style-1-heading-2-font-weight);
+  color: var(--dark-gray);
+  font-size: var(--style-1-heading-2-font-size);
+  letter-spacing: var(--style-1-heading-2-letter-spacing);
+  line-height: var(--style-1-heading-2-line-height);
+  white-space: nowrap;
+  font-style: var(--style-1-heading-2-font-style);
+}
+
+.element .text-wrapper-7 {
+  position: absolute;
+  top: 64px;
+  left: 262px;
+  font-family: var(--style-1-heading-1-font-family);
+  font-weight: var(--style-1-heading-1-font-weight);
+  color: var(--squirtle-blue);
+  font-size: var(--style-1-heading-1-font-size);
+  letter-spacing: var(--style-1-heading-1-letter-spacing);
+  line-height: var(--style-1-heading-1-line-height);
+  white-space: nowrap;
+  font-style: var(--style-1-heading-1-font-style);
+}
+
+.element .left-bar {
+  position: absolute;
+  width: 252px;
+  height: 792px;
+  top: 0;
+  left: 0;
+}
+
+.element .overlap-group {
+  position: relative;
+  width: 242px;
+  height: 792px;
+  background-color: var(--squirtle-blue);
+}
+
+.element .ash-ketchum {
+  position: absolute;
+  width: 178px;
+  top: 307px;
+  left: 48px;
+  font-family: var(--style-1-title-font-family);
+  font-weight: var(--style-1-title-font-weight);
+  color: var(--team-rocket-white);
+  font-size: var(--style-1-title-font-size);
+  letter-spacing: var(--style-1-title-letter-spacing);
+  line-height: var(--style-1-title-line-height);
+  font-style: var(--style-1-title-font-style);
+}
+
+.element .text-wrapper-8 {
+  position: absolute;
+  width: 178px;
+  top: 385px;
+  left: 48px;
+  font-family: "Fira Sans", Helvetica;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 17px;
+}
+
+.element .text-wrapper-9 {
+  position: absolute;
+  width: 178px;
+  top: 434px;
+  left: 48px;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: #ffffff;
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  font-style: var(--style-1-body-text-font-style);
+}
+
+.element .text-wrapper-10 {
+  position: absolute;
+  width: 178px;
+  top: 454px;
+  left: 48px;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: #ffffff;
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  font-style: var(--style-1-body-text-font-style);
+}
+
+.element .text-wrapper-11 {
+  position: absolute;
+  width: 178px;
+  top: 474px;
+  left: 48px;
+  font-family: var(--style-1-body-text-font-family);
+  font-weight: var(--style-1-body-text-font-weight);
+  color: #ffffff;
+  font-size: var(--style-1-body-text-font-size);
+  letter-spacing: var(--style-1-body-text-letter-spacing);
+  line-height: var(--style-1-body-text-line-height);
+  font-style: var(--style-1-body-text-font-style);
+}

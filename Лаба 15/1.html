@@ -1,0 +1,103 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <title>Поиск ДЕТЕЙ боди</title>
+</head>
+<body>
+  <h1>Заголовок один</h1>
+  <p>Первый абзац С тем-сем</p>
+  <form>
+    <input type="text" placeholder="Введите ваш CCV код">
+    <button>Отправить</button>
+  </form>
+  <p>Еще один абзац</p>
+  <h1>Заголовок четыре</h1>
+  <script>
+    let bodyChildren = document.body.childNodes;
+
+    for (let i = 0; i < bodyChildren.length; i++) {
+      console.log(bodyChildren[i]);
+      if (i < 2) {
+        console.log("Вот тип узла: " + bodyChildren[i].nodeType);
+      }
+    }
+  </script>
+
+<h1>Список месяцев</h1>
+<ol id="monthsList">
+  <li>Январь</li>
+  <li>Февраль</li>
+  <li>Март</li>
+  <li>Апрель</li>
+  <li>Май</li>
+  <li>Июнь</li>
+  <li>Июль</li>
+  <li>Август</li>
+  <li>Сентябрь</li>
+  <li>Октябрь</li>
+  <li>Ноябрь</li>
+  <li>Декабрь</li>
+</ol>
+
+<h2>Таблица месяцев</h2>
+<table id="monthsTable">
+  <thead>
+    <tr>
+    <th>№</th>
+    <th>Название месяца</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<script>
+  // из списка 
+  let monthsList = document.getElementById('monthsList').querySelectorAll('li');
+  let monthsTable = document.getElementById('monthsTable').getElementsByTagName('tbody')[0];
+
+  // тейбл
+  for (let i = 0; i < monthsList.length; i++) {
+  let row = monthsTable.insertRow(i);
+  let cell1 = row.insertCell(0);
+  let cell2 = row.insertCell(1);
+
+  cell1.innerHTML = i+1;
+  cell2.innerHTML = monthsList[i].textContent;
+  }
+
+ 
+  let newItem = document.createElement("li"); // +13 пункт
+  let textnode = document.createTextNode("13-го месяца не бывает XD (>_<)");
+  newItem.appendChild(textnode);
+  document.getElementById("monthsList").appendChild(newItem);
+
+ 
+  let daysList = document.createElement("ul"); // Засовываем список
+  let days = ["Пнедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"];
+  for (let i = 0; i < days.length; i++) {
+    let dayItem = document.createElement("li");
+    let dayTextnode = document.createTextNode(days[i]);
+    dayItem.appendChild(dayTextnode);
+    daysList.appendChild(dayItem);
+  }
+  newItem.appendChild(daysList);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

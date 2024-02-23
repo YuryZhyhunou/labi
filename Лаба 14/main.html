@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>виндовы</title>
+</head>
+<body>
+  <a  onclick="openWindow1()">Открыть окно 1</a>
+</br>
+  <a  onclick="openWindow2()">Открыть окно 2</a>
+</br>
+  <a href="second.html">Перейти на другую страницу</a>
+
+  <script>
+    let window1, window2;
+
+    function openWindow1() {
+      window1 = window.open("", "", "width=200, height=200, directories=0, menubar=0, status=1, location=0, toolbar=0, scrollbars=1");
+    }
+
+    function openWindow2() {
+      window2 = window.open("", "", "width=400, height=400, directories=1, menubar=1, status=1, location=0, toolbar=1, scrollbars=0");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+.print {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+.div {
+    background-color: #ffffff;
+    width: 612px;
+    height: 792px;
+    position: relative;
+  }
+  
+.section-education {
+    display: flex;
+    width: 359px;
+    top: 674px;
+    left: 198px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+  }
+  
+.text-wrapper {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--darker);
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+.resume-block {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+.div-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .text-wrapper-2 {
+    position: relative;
+    width: 359px;
+    margin-top: -1px;
+    font-family: var(--h2-font-family);
+    font-weight: var(--h2-font-weight);
+    color: var(--darker);
+    font-size: var(--h2-font-size);
+    letter-spacing: var(--h2-letter-spacing);
+    line-height: var(--h2-line-height);
+    font-style: var(--h2-font-style);
+  }
+  
+.text-wrapper-3 {
+    position: relative;
+    width: 359px;
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--lighter);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    font-style: var(--h3-font-style);
+  }
+  
+.section-experience {
+    display: inline-flex;
+    top: 286px;
+    left: 198px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+  }
+  
+.text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+.resume-block-2 {
+    display: flex;
+    flex-direction: column;
+    width: 359px;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+  
+.position-start-date {
+    position: relative;
+    width: 359px;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 14px;
+  }
+  
+.span {
+    font-weight: 600;
+    color: #000000;
+  }
+  
+.text-wrapper-5 {
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: #636363;
+    font-style: var(--h3-font-style);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    font-size: var(--h3-font-size);
+  }
+  
+.p {
+    position: relative;
+    align-self: stretch;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 8px;
+    letter-spacing: 0;
+    line-height: 12px;
+  }
+  
+.section-about {
+    display: flex;
+    width: 359px;
+    top: 184px;
+    left: 198px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+  }
+  
+.aboutMe {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--p-font-family);
+    font-weight: var(--p-font-weight);
+    color: var(--darker);
+    font-size: var(--p-font-size);
+    letter-spacing: var(--p-letter-spacing);
+    line-height: var(--p-line-height);
+    font-style: var(--p-font-style);
+  }
+  
+.section-contact {
+    display: flex;
+    width: 85px;
+    top: 184px;
+    left: 68px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: absolute;
+  }
+  
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+.text-wrapper-6 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--h1-font-family);
+    font-weight: var(--h1-font-weight);
+    color: var(--darker);
+    font-size: var(--h1-font-size);
+    letter-spacing: var(--h1-letter-spacing);
+    line-height: var(--h1-line-height);
+    font-style: var(--h1-font-style);
+  }
+  
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    width: 100%;
+    flex: 0 0 auto;
+    position: relative;
+    align-self: stretch;
+  }
+  
+.text-wrapper-7 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--lighter);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    font-style: var(--h3-font-style);
+  }
+  
+.text-wrapper-8 {
+    font-family: var(--h3-font-family);
+    font-weight: var(--h3-font-weight);
+    color: var(--lighter);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--h3-letter-spacing);
+    line-height: var(--h3-line-height);
+    position: relative;
+    align-self: stretch;
+    font-style: var(--h3-font-style);
+  }
+  
+.NAME {
+    position: absolute;
+    width: 87px;
+    height: 444px;
+    top: 268px;
+    left: 55px;
+  }
+  
+.frame {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+.text-wrapper-10 {
+    position: relative;
+    width: fit-content;
+    font-family: "Montserrat-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: var(--custom-resume-style);
+    font-size: 110px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 111px;
+    white-space: nowrap;
+  }
+  
+.overlap-group {
+    position: absolute;
+    width: 612px;
+    height: 171px;
+    top: 0;
+    left: 0;
+  }
+  
+.header-shape {
+    position: absolute;
+    width: 612px;
+    height: 104px;
+    top: 0;
+    left: 0;
+    background-color: var(--custom-resume-style);
+  }
+  
+.headshot {
+    position: absolute;
+    width: 146px;
+    height: 146px;
+    top: 25px;
+    left: 233px;
+    object-fit: cover;
+  }
+  

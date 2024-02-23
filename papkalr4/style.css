@@ -1,0 +1,19 @@
+
+img{
+  width: 80%;
+}
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    color: rgb(15, 2, 41);
+}
+
+body { background-color: rgb(210, 226, 232); }

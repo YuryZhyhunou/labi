@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LR да когда оно уже закончится</title>
+    <style>
+        .cl1 {
+            color: blue;
+            font-family: Courier New;
+            font-size: 12px;
+        }
+
+        .cl2 {
+            color: red;
+            font-weight: bold;
+        }
+
+        .cl3 {
+            color: green;
+            font-family: "Times New Roman";
+            font-style: italic;
+        }
+
+        .cl4 {
+            color: black;
+            border: 1px dashed red;
+        }
+
+        .cl5 {
+            color: blue;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td class="cl1">Элемент1</td>
+            <td class="cl1">Элемент2</td>
+            <td class="cl1">Элемент3</td>
+            <td class="cl1">Элемент4</td>
+            <td class="cl1">Элемент5</td>
+            <td class="cl1">Элемент6</td>
+        </tr>
+    </table>
+
+
+
+
+    <script>
+
+
+
+
+
+        // При наведении на Элемент1
+        document.querySelector('td:nth-child(1)').addEventListener('mouseover', function () {
+            this.classList.add('cl2');
+        });
+
+
+        // При выходе с Элемент1
+        document.querySelector('td:nth-child(1)').addEventListener('mouseout', function () {
+            this.classList.add('cl5');
+            this.classList.remove('cl2');
+        });
+
+
+        // При двойном  на Элемент2
+        document.querySelector('td:nth-child(2)').addEventListener('dblclick', function () {
+            this.classList.add('cl3');
+        });
+
+
+        // При одинарном  на Элемент3
+        document.querySelector('td:nth-child(3)').addEventListener('click', function () {
+            this.classList.add('cl4');
+        });
+
+        // При наведении на Элемент4
+        document.querySelector('td:nth-child(4)').addEventListener('mouseover', function () {
+            this.style.color = 'yellow';
+        });
+
+
+        // При двойном мна Элемент5
+        document.querySelector('td:nth-child(5)').addEventListener('dblclick', function () {
+            this.style.backgroundColor = 'yellow';
+        });
+
+
+
+        // При одинарномна Элемент6
+        document.querySelector('td:nth-child(6)').addEventListener('click', function () {
+            this.style.fontStyle = 'italic';
+        });
+
+
+
+
+    </script>
+
+    <script>
+
+
+
+
+
+
+        //  сумма цифр
+        function calculateSum() {
+
+            let sum = 0;
+            const buttons = document.querySelectorAll('button[data-number]');
+            for (let button of buttons) {
+                button.addEventListener('click', function () {
+
+                    sum += parseInt(button.getAttribute('data-number'));
+                });
+            }
+            document.querySelector('#resultButton').addEventListener('click', function () {
+
+
+                alert('Сумма: ' + sum);
+            });
+        }
+        calculateSum();
+
+
+
+
+    </script>
+
+    <script>
+
+
+
+        // привет
+        function greetUser() {
+
+
+
+            const name = prompt('Введите ваше имя:');
+
+
+            const message = name ? 'Привет, ' + name + '!' : 'Привет, незнакомец!';
+            alert(message);
+        }
+        greetUser();
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+<button data-number="1">1</button>
+<button data-number="2">2</button>
+<button data-number="3">3</button>
+<button data-number="4">4</button>
+<button data-number="5">5</button>
+<button id="resultButton">Результат</button>
+
+<script>
+    let sum = 0;
+    const buttons = document.querySelectorAll('button[data-number]');
+    for (let button of buttons) {
+        button.addEventListener('click', function () {
+            sum += parseInt(button.getAttribute('data-number'));
+        });
+    }
+    document.querySelector('#resultButton').addEventListener('click', function () {
+        alert('Сумма цифр: ' + sum);
+    });
+</script>
+
+
+<p id="intro">Я, Гринчик Максим Александрович, учусь работать с JavaScript</p>
+
+
+<script>
+  // При наведении
+  document.getElementById('intro').addEventListener('mouseover', function() {
+      this.style.display = 'none';
+  });
+  document.getElementById('intro').addEventListener('mouseout', function() {
+      this.style.display = 'block';
+  });
+</script>
+
+
+</body>
+
+
+
+</html>

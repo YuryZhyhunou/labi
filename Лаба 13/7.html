@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>hjbb</title>
+</head>
+
+<body>
+
+
+
+
+
+
+  
+  <label for="inputChar">цифра для проверки</label>
+  <input type="text" id="inputChar"><br><br>
+  <label for="inputString"> строка:</label>
+  <input type="text" id="inputString"><br><br>
+  <button onclick="checkStart()">Проверить</button>
+  <p id="result"></p>
+  <script>
+    function checkStart() {
+      let charToCheck = document.getElementById('inputChar').value;
+      let inputString = document.getElementById('inputString').value;
+      let regExp = new RegExp("^" + charToCheck, "i");
+      if (regExp.test(inputString)) {
+        document.getElementById('result').textContent = `Строка начинается с символа ${charToCheck}`;
+      } else {
+        document.getElementById('result').textContent = `Строка НЕ начинается с символа ${charToCheck}`;
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+

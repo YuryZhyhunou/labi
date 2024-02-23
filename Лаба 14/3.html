@@ -1,0 +1,22 @@
+<head>
+  <title>зад 3</title>
+</head>
+<body>
+  <button onclick="changeWindowSize()">Изменить ширину</button>
+
+  <p id="Info">браузер: </p>
+
+  <script>
+    function changeWindowSize() {
+      window.resizeTo(50, 50);
+    }
+    document.getElementById('Info').textContent += navigator.userAgent; 
+    setTimeout(function() {
+      document.getElementById('browserInfo').textContent += navigator.userAgent;
+    }, 3000);
+    setTimeout(function() {
+      document.getElementById('Info').textContent += navigator.userAgent;
+    }, 7000);
+  </script>
+</body>
+</html>

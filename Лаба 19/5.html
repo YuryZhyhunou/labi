@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Button Click</title>
+</head>
+<body>
+    <button id="myButton">Создать и вызвать событие</button>
+    <form>
+        <input type="submit" id="submitButton" value="Submit" style="display: none;">
+    </form>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            let submitButton = document.getElementById('submitButton');
+            let event = new MouseEvent('click', {
+                'view': window,
+                'bubbles': true,
+                'cancelable': true
+            });
+            submitButton.dispatchEvent(event);
+        });
+
+        document.getElementById('submitButton').addEventListener('click', function() {
+            console.log('Кнопка Submit была нажата');
+        });
+    </script>
+</body>
+</html>

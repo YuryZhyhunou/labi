@@ -1,0 +1,92 @@
+<html>
+<head>
+ 
+  <title>Хfnvтест</title>
+</head>
+<body>
+  <h1>Тест на тему HTML</h1>
+  <div id="quiz">
+    <div class="question">
+      <p>1. Что означает аббревиатура HTML?</p>
+      <label><input type="radio" name="q1" value="a"> Hyper Training of Mass Lactation</label><br>
+      <label><input type="radio" name="q1" value="b"> Hyper Text Markup Language</label><br>
+      <label><input type="radio" name="q1" value="c"> Hype and Text Made-up Landing</label>
+    </div>
+    <div class="question">
+      <p>2. Какой тег используется для создания ссылок в HTML?</p>
+      <label><input type="checkbox" name="q2a" value="a"> &lt;href&gt;</label><br>
+      <label><input type="checkbox" name="q2b" value="b"> &lt;link&gt;</label><br>
+      <label><input type="checkbox" name="q2c" value="c"> &lt;meow&gt;</label>
+    </div>
+    <div class="question">
+      <p>3. Что делает тег &lt;img&gt; в HTML?</p>
+      <input type="text" name="q3">
+    </div>
+    <button onclick="showResults()" onclick="showtime()">Результат</button>
+  </div>
+  <div id="result"></div>
+
+
+
+
+  <script>
+
+
+
+
+
+    function showResults() {
+      let questions = document.querySelectorAll('.question');
+      let result = document.getElementById('result');
+      let wrongAnswers = [];
+
+
+
+      if (questions[0].querySelector('input[name="q1"]:checked').value !== "b") {
+        wrongAnswers.push("1. Что означает аббревиатура HTML?");
+      }
+      let checkedOptions2 = Array.from(questions[1].querySelectorAll('input[name="q2a"], input[name="q2b"], input[name="q2c"]:checked'));
+      if (!checkedOptions2.some(checkbox => checkbox.value === "a") || !checkedOptions2.some(checkbox => checkbox.value === "b")) {
+        wrongAnswers.push("2. Какой тег используется для создания ссылок в HTML?");
+      }
+      if (questions[2].querySelector('input[name="q3"]').value.trim().toLowerCase() !== 'вставляет изображение') {
+        wrongAnswers.push("3. Что делает тег <img> в HTML?");
+      }
+
+
+
+
+
+
+      
+      // Выв
+      if (wrongAnswers.length === 0) {
+        result.textContent = "Круто, У вас все правильные ответы.";
+      } else {
+        result.textContent = "Давай больше. Неверные ответы: " + wrongAnswers.join(', ');
+      }
+      
+
+      var endTime = new Date();
+  var testTime = endTime - startTime;
+  document.getElementById('result').textContent += " Время теста: " + testTime + " мс";
+}
+
+    
+ 
+var timerDisplay = document.createElement('div');
+timerDisplay.id = "timer";
+document.body.appendChild(timerDisplay);
+var startTime;
+window.onload = function() {
+  startTime = new Date();
+};
+
+</script>
+
+
+
+
+
+</body>
+</html>
